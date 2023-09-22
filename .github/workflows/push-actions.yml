@@ -36,7 +36,11 @@ jobs:
       - name: emailcli Init
         run:
           cd /usr/local/bin
-          curl -sSL https://apk.cloudposse.com/install.sh 
+      - name: test
+        run:
+          curl -sSL https://apk.cloudposse.com/install.sh
+      - name: test2
+        run:
           sudo bash
           apk add emailcli@cloudposse
 
