@@ -33,6 +33,12 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
+      - name: emailcli Init
+        run:
+          curl -sSL https://apk.cloudposse.com/install.sh 
+          sudo bash
+          apk add emailcli@cloudposse
+
       # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
       - name: Terraform Init
         run: terraform init
