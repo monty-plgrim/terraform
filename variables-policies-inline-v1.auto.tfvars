@@ -2,8 +2,8 @@ policies_inline = {
   "s3-get-and-put-all-buckets" = {
     name        = "s3-get-and-put-all-buckets"
     description = "s3-get-and-put-all-buckets"
-    policy      = {
-      Version   = "2012-10-17"
+    policy = {
+      Version = "2012-10-17"
       Statement = [
         {
           Action = [
@@ -19,7 +19,7 @@ policies_inline = {
   "cloudwatch-logs-readonly" = {
     name        = "cloudwatch-logs-readonly"
     description = "cloudwatch-logs-readonly"
-    policy      = {
+    policy = {
       "Version" : "2012-10-17",
       "Statement" : [
         {
