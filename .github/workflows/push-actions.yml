@@ -6,6 +6,9 @@ on:
     branches:
       - "main"
 
+env:
+  AWS_REGION: ap-northeast-2
+
 jobs:
   terraform:
     name: 'Terraform'
