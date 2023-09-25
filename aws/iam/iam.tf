@@ -38,7 +38,7 @@ resource "null_resource" "ready_to_send_email" {
 resource "null_resource" "send_email_to_user" {
   for_each = module.user
   provisioner "local-exec" {
-    command = "sendemail -f rnddesk@plgrim.com -t $email -u \"Plgrim RND IAM Identities\" -m \"Please Check .csv file\" -s smtp.gmail.com -a $user_name.csv -xu rnddesk@plgrim.com -xp \"plgrim0829@@\""
+    command = "sendemail -f rnddesk@plgrim.com -t $email -u \"Plgrim RND IAM Identities\" -m \"Please Check .csv file\" -s smtp.gmail.com -a $user_name.csv -xu rnddesk@plgrim.com -xp \"plgrim0829@@\" -o tls=auto"
 
     environment = {
       user_name = each.value.iam_user_info.user_name
