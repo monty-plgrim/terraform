@@ -31,7 +31,7 @@ resource "null_resource" "user_info_to_csv" {
 
 resource "null_resource" "ready_to_send_email" {
   provisioner "local-exec" {
-    command = "sudo apt-get install sendEmail"
+    command = "sudo apt-get install sendemail"
   }
 }
 
