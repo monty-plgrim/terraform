@@ -9,7 +9,7 @@ module "user" {
   user_policies_aws    = each.value.policies_aws
   policies_inline      = data.aws_iam_policy.policies_inline_with_arn
   policies_aws         = var.policies_aws
-  depends_on = [data.aws_iam_policy.policies_inline_with_arn]
+  depends_on           = [data.aws_iam_policy.policies_inline_with_arn]
 }
 
 
