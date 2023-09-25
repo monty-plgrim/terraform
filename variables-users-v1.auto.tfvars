@@ -19,7 +19,7 @@ users = {
     name            = "andrew"
     path            = "/plgrim/"
     email           = "monty@plgrim.com"
-    groups          = ["developers", "devops"]
+    groups          = ["devops"]
     policies_inline = ["s3-get-and-put-all-buckets"]
     policies_aws    = ["AdministratorAccess"]
   }
