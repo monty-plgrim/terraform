@@ -1,4 +1,4 @@
 output "selected_access_keys" {
-  value = module.user
+  value     = module.user
   sensitive = true
 }

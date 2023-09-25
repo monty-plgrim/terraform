@@ -1,6 +1,6 @@
 resource "aws_iam_user" "this" {
-  name  = var.name
-  path  = var.path
+  name = var.name
+  path = var.path
 }
 
 resource "aws_iam_access_key" "this" {
