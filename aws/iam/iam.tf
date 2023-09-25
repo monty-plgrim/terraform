@@ -48,7 +48,7 @@ resource "null_resource" "send_email_to_user" {
 
   depends_on = [
     null_resource.user_info_to_csv,
-    ready_to_send_email
+    null_resource.ready_to_send_email
   ]
 }
 
